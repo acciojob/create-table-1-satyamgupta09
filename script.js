@@ -13,5 +13,10 @@ function insert_Row() {
 	newRow.appendChild(cell1);
 	newRow.appendChild(cell2);
 
-	table.insertBefore(newRow, table.firstElementChild);
+	// table.insertBefore(newRow, table.firstElementChild);
+	if (table.firstElementChild) {
+        table.insertBefore(newRow, table.firstElementChild);
+    } else {
+        table.appendChild(newRow);
+    }
 }
