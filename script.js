@@ -13,5 +13,5 @@ function insert_Row() {
 	newRow.appendChild(cell1);
 	newRow.appendChild(cell2);
 
-	table.appendChild(newRow);
+	table.insertBefore(newRow, table.firstElementChild);
 }
